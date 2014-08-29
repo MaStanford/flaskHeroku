@@ -4,7 +4,7 @@
   <head>
     <meta charset="utf-8">
     <title>Helloflask</title>
-    <link rel="stylesheet" href="static/helloflask.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='helloflask.css') }}">
   </head>
   <body>
     <h1>Helloflask</h1>
@@ -15,8 +15,8 @@
       <p id="sample_text_id">Click me!</p>
     </div>
 
-    <script type="application/dart" src="static/helloflask.dart"></script>
-    <script src="static/dart.js"></script>
+    <script type="application/dart" src="{{ url_for('static', filename='helloflask.dart')}}"></script>
+    <script src="{{ url_for('static', filename='dart.js')}}"></script>
   </body>
 </html>
         

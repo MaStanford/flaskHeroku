@@ -20,7 +20,6 @@ if (navigator.userAgent.indexOf('(Dart)') === -1) {
       if (scripts[i].src && scripts[i].src != '') {
         var script = document.createElement('script');
         script.src = scripts[i].src.replace(/\.dart(?=\?|$)/, '.dart.js');
-        script.src = 'static/' + script.src;
         var parent = scripts[i].parentNode;
         // TODO(vsm): Find a solution for issue 8455 that works with more
         // than one script.
